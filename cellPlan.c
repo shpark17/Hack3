@@ -25,10 +25,10 @@
    printf("%f days used, %f days remaining\n Average daily used: %f\n", CurrentDay, DaysRemaining, AverageDailyUsed);
    
    if(AverageDailyUsed < AverageDailyUse) {
-     printf("You are using less than your average daily use (%fGb/day)\n Continuing to use this low usage, you will miss %f GB.\n To match your data plan, use about %f GB/day.", AverageDataUsed, ExpectedData, PerfectDataRate);
+     printf("You are using less than your average daily use (%fGb/day)\n Continuing to use this low usage, you will miss %f GB.\n To match your data plan, use about %f GB/day.", AverageDailyUse, ExpectedData, PerfectDataRate);
    }  
    else if(AverageDailyUsed>AverageDailyUse) {
-     printf("You are using more than your average daily use (%fGb/day)\n Continuing to use this high usage, you will exceed by %f GB.\n To match your data plan, use about %f GB/day.", AverageDataUsed, ExpectedData, PerfectDataRate);
+     printf("You are using more than your average daily use (%fGb/day)\n Continuing to use this high usage, you will exceed by %f GB.\n To match your data plan, use about %f GB/day.", AverageDailyUse, ExpectedData, PerfectDataRate);
    }  
  return 0;
  }
