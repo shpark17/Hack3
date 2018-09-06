@@ -32,6 +32,7 @@
    }  
    if(GbUsed>GbPlan) {
      printf("You have already exceeded your data plan this month");
+   } 
  return 0;
  }
    
