@@ -27,7 +27,7 @@
    if(AverageDailyUsed < AverageDailyUse) {
      printf("You are using less than your average daily use (%fGB/day)\n Continuing to use this low usage, you will miss %f GB.\n To match your data plan, use about %f GB/day.", AverageDailyUse, ExpectedData, PerfectDataRate);
    }  
-   else if(AverageDailyUsed>AverageDailyUse) {
+   else if(AverageDailyUsed>AverageDailyUse, GbPlan-GbUsed >= 0) {
      printf("You are using more than your average daily use (%fGB/day)\n Continuing to use this high usage, you will exceed by %f GB.\n To match your data plan, use about %f GB/day.", AverageDailyUse, ExpectedData, PerfectDataRate);
    }  
    else if(GbUsed>GbPlan) {
