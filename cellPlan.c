@@ -19,7 +19,7 @@
    double AverageDailyUsed = GbUsed/CurrentDay;
    double AverageDailyUse = GbPlan/30;
    double DaysRemaining = 30 - CurrentDay;
-   double ExpectedData = abs(GbPlan - (AverageDailyUsed * DaysRemaining));
+   double ExpectedData = (AverageDailyUse * 30) * (AverageDailyUsed * DaysRemaining);
    double PerfectDataRate = (GbPlan-GbUsed)/(DaysRemaining);
    
    printf("%f days used, %f days remaining\n Average daily used: %f\n", CurrentDay, DaysRemaining, AverageDailyUsed);
